@@ -1,0 +1,22 @@
+# Copyparty Configuration File - Basic working version
+# Admin account
+-a admin:DSMOTIFXS678!
+
+# Volume configurations  
+-v ~/copyparty/shares/public:/public:rw
+-v ~/copyparty/shares/private:/private:rw
+-v ~/copyparty/shares/backup:/backup:rw
+-v ~/copyparty/shares/media:/media:r
+-v ~/copyparty/shares/documents:/documents:rw
+
+# Development folders for cross-device deployment
+-v ~/dev:/dev:rw
+-v ~/dev/apps:/dev-apps:rw
+-v ~/dev/docs:/dev-docs:rw
+-v ~/dev/mcp-servers:/dev-mcp:rw
+-v ~/dev/unsorted:/dev-unsorted:rw
+-v ~/dev/whmcs-modules:/dev-whmcs:rw
+
+# Network configuration for Headscale and public access
+-i 0.0.0.0
+-p 3923

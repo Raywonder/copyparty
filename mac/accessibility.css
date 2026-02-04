@@ -1,0 +1,111 @@
+/* Copyparty Accessibility Styles - accesskit.dev compliant */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .file-row, .upload-area, .control-panel {
+        border: 2px solid #000;
+    }
+    
+    .button {
+        border: 2px solid #000;
+        font-weight: bold;
+    }
+}
+
+/* Focus indicators */
+*:focus {
+    outline: 3px solid #0066cc;
+    outline-offset: 2px;
+}
+
+/* Skip links for keyboard navigation */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* Screen reader only content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Improved color contrast */
+.text-primary { color: #000; }
+.text-secondary { color: #333; }
+
+/* Larger touch targets for mobile */
+button, .button, input[type="submit"], input[type="button"] {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Better form labels */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0066cc;
+}
+
+/* Error messages */
+.error-message {
+    color: #d32f2f;
+    font-weight: bold;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* Success messages */
+.success-message {
+    color: #388e3c;
+    font-weight: bold;
+    display: block;
+    margin-top: 0.25rem;
+}

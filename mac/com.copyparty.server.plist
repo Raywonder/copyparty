@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.copyparty.server</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/admin/copyparty/start-copyparty-complete.sh</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/admin/copyparty</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/admin/copyparty/copyparty.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/admin/copyparty/copyparty.err.log</string>
+    <key>UserName</key>
+    <string>admin</string>
+    <key>GroupName</key>
+    <string>staff</string>
+</dict>
+</plist>
